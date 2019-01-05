@@ -1,17 +1,35 @@
-<!DOCTYPE html>
-<html lang="en-us">
 
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Spells from Harry Potter</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/javascript" href="assets/javascript/game.js">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word-Guess-Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
 </head>
-
 <body>
-</body>
 
+    <div id="container">
+        <div class="main-container">
+            
+            <h1><a href="https://fontmeme.com/harry-potter-font/"><img src="https://fontmeme.com/permalink/190105/612d4ef4b172a3e7ad8f29dc23e3b639.png" alt="harry-potter-font"></a>
+            </h1>
+            
+                    <h2>Press any key to begin guessing letters...</h2>
+                    <h2>Hint: All words are spells used in Harry Potter!</h2>
+            
+            <p id="guess"></p>
+            <p class="size">Guesses Remaining: <span id="left" class="sizeNumber"></span></p>
+            <p class="size">Incorrectly Guessed Letters: <span id="wrong" class="sizeNumber "></span></p>
+            <p class="size">Win: <span id="wins" class="sizeNumber"></span>Lose: <span id="losses" class="sizeNumber "></span></p>
+            <div id="img"></div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
 </html>

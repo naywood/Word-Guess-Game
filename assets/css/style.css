@@ -1,0 +1,55 @@
+body {
+    background-image:url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;    
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    width: 100%; 
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10px;
+    font-size: 48px;
+}
+
+h2, .size, .sizeNumber, #guess{
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+
+#guess {
+    margin: auto;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+.body-container {
+    text-align: center;
+    width: 80%;
+}
+
+.size  {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sizeNumber{
+    text-align: left;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
