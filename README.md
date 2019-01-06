@@ -1,4 +1,4 @@
-# Word-Guess-Game
+# Word-Guess-Game-- HARRY POTTER SPELLS EDITION
 
 ## Option Two: Word Guess Game (Challenge - Recommended)
 

@@ -52,11 +52,7 @@ function wrongGuess(char) {
 
 // reset function
 function initialGame() {
-    if ($("winImage")) {
-        $("winImage").remove()
-    }
-
-    left = 9;
+     left = 9;
     answerArray = [];
     $("wrong").innerHTML = "";
     userRightGuess = 0
@@ -98,24 +94,28 @@ document.onkeyup = function(event) {
     if (rightGuess) {
         rightGuess = false
         if (matchLength()) {
+            //here is where I wanted to add some audio clips
             let audio = new Audio('');
             audio.play()
             wins++
             winsScore()
             setTimeout(initialGame, 2000)
         } else {
+            //here is where I wanted to add some audio clips
             let audio = new Audio('');
             audio.play()
         }
     } else {
         left--
         if (left < 1) {
+            //here is where I wanted to add some audio clips
             let audio = new Audio('');
             audio.play()
             initialGame()
             losses++
             lossesScore()
         } else {
+            //here is where I wanted to add some audio clips
             let audio = new Audio('');
             audio.play()
             wrongGuess(userGuess)
