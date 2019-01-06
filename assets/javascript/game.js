@@ -1,22 +1,22 @@
 //shorten the code
-let $ = function (id) {
+var $ = function (id) {
     return document.getElementById(id)
 }
 
 //global variables
-const words = ['alohomora', 'cruciatus curse','expelliarmus','expecto patronum','lumos','obliviate','sectumsempra','stupefy','wingardium leviosa','accio','avada kedavra','petrificus totalus','riddikulus','reparo','confundo','ascendio'
+var words = ['alohomora', 'cruciatus curse','expelliarmus','expecto patronum','lumos','obliviate','sectumsempra','stupefy','wingardium leviosa','accio','avada kedavra','petrificus totalus','riddikulus','reparo','confundo','ascendio'
 ];
-let word;
-let answerArray = [];
-let userGuess;
-let rightGuess = false;
-let userRightGuess = 0;
-let left = 9;
-let wins = 0;
-let losses = 0;
+var word;
+var answerArray = [];
+var userGuess;
+var rightGuess = false;
+var userRightGuess = 0;
+var  left = 9;
+var  wins = 0;
+var losses = 0;
 
 
-//random word
+//pick a random word
 function random() {
     let random = Math.floor(Math.random() * words.length);
     word = words[random]
@@ -30,27 +30,27 @@ function showBlank() {
     $("guess").innerHTML = answerArray.join(" ")
 }
 
-//guesses left
+//subtract guesses from total
 function guessesLeft() {
     $("left").innerHTML = left
 }
 
-//wins
+//creat wins
 function winsScore() {
     $("wins").innerHTML = wins
 }
 
-//losses
+//creat losses
 function lossesScore() {
     $("losses").innerHTML = losses
 }
 
-//show wrong guess
+//show the letter that is an incorrect guess
 function wrongGuess(char) {
     $("wrong").innerHTML += char + ", "
 }
 
-// resent function
+// reset function
 function initialGame() {
     if ($("winImage")) {
         $("winImage").remove()
@@ -89,7 +89,7 @@ let matchLength = function() {
     else return false
 }
 
-//user guess
+//what to do withuser guess
 document.onkeyup = function(event) {
     userGuess = event.key.toLowerCase();
 
