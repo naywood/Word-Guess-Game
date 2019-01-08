@@ -85,6 +85,8 @@ let matchLength = function() {
     else return false
 }
 
+//here is code that takes a space in a one of the random words and displays it as a space, not an underscore
+
 //what to do withuser guess
 document.onkeyup = function(event) {
     userGuess = event.key.toLowerCase();
